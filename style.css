@@ -1,0 +1,14 @@
+@font-face {
+    font-family:"gabriel_weiss_friends" ;
+    src: url(/fonts/GABRWFFR.TTF);
+}
+#hi {
+    width: 500px;
+    height: 500px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }

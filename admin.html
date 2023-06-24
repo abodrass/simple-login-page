@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .success-message {
+            color: green;
+            font-weight: bold;
+        }
+        .error-message {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Admin Operations</h2>
+
+    <!-- Add Participant Form -->
+    <form method="POST" action="admin_operations.php">
+        <h3>Add Participant</h3>
+        <label for="pid">PID:</label>
+        <input type="text" name="pid" id="pid" required>
+        <br>
+        <label for="pssn">PSSN:</label>
+        <input type="text" name="pssn" id="pssn" required>
+        <br>
+        <label for="pfname">First Name:</label>
+        <input type="text" name="pfname" id="pfname" required>
+        <br>
+        <label for="plname">Last Name:</label>
+        <input type="text" name="plname" id="plname" required>
+        <br>
+        <label for="pbod">Birth Date:</label>
+        <input type="text" name="pbod" id="pbod" required>
+        <br>
+        <label for="p_project_name">Project Name:</label>
+        <input type="text" name="p_project_name" id="p_project_name" required>
+        <br>
+        <label for="psex">Sex:</label>
+        <input type="text" name="psex" id="psex" required>
+        <br>
+        <input type="submit" name="add" value="Add Participant">
+    </form>
+
+    <!-- Delete Participant Form -->
+    <form method="GET" action="admin_operations.php">
+        <h3>Delete Participant</h3>
+        <label for="deletePid">PID:</label>
+        <input type="text" name="delete" id="deletePid" required>
+        <br>
+        <input type="submit" value="Delete Participant">
+    </form>
+
+    <!-- Update Participant Form -->
+    <form method="POST" action="admin_operations.php">
+        <h3>Update Participant</h3>
+        <label for="updatePid">PID:</label>
+        <input type="text" name="participantId" id="updatePid" required>
+        <br>
+        <label for="updateFname">First Name:</label>
+        <input type="text" name="pfname" id="updateFname" required>
+        <br>
+        <label for="updateLname">Last Name:</label>
+        <input type="text" name="plname" id="updateLname" required>
+        <br>
+        <input type="submit" name="update" value="Update Participant">
+    </form>
+
+    <!-- Search Participant Form -->
+    <form method="GET" action="admin_operations.php">
+        <h3>Search Participant</h3>
+        <label for="searchKeyword">Search Keyword:</label>
+        <input type="text" name="searchKeyword" id="searchKeyword" required>
+        <br>
+        <input type="submit" name="search" value="Search Participant">
+    </form>
+
+    
+    </table>
+</body>
+</html>
